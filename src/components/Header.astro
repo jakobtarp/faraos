@@ -1,0 +1,30 @@
+---
+import Button from "./Button.astro";
+---
+
+<header class="flex p-4">
+  <!-- <img class="w-60" src="imgs/Spotify-Black-and-White-Logo.png" alt="logo" /> -->
+  <div class="logo flex mx-auto cursor-pointer">
+    <img class="h-10 mr-10 my-auto" src="imgs/nextleft.png" alt="arrow" />
+    <img class="h-10 my-auto" src="imgs/nextright.png" alt="arrow" />
+  </div>
+  <div class="ml-auto mt-5 mr-5 text-lg">
+    <Button variant="secondary" link="/courses">Sign Up</Button>
+    <Button variant="primary" link="/courses">Log in</Button>
+  </div>
+</header>
+
+<!-- <style>
+  header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-block: 1rem;
+  }
+
+  a {
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+</style> -->
