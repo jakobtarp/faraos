@@ -9,20 +9,19 @@ import Badge from "./Badge.astro";
       <h2 class="text-white p-4 text-2xl font-bold">Focus</h2>
     </header>
     <div class="grid grid-cols-5 gap-3 mr-3 ml-3">
-      <Cardsearch header="Peaceful Piano" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+      <Cardsearch newBadge={true} header="Peaceful Piano" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
         <img src="imgs/peaceful_piano.jpeg" alt="" />
-        newBadge={true}
       </Cardsearch>
-      <Cardsearch header="Deep focus" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+      <Cardsearch newBadge={false} header="Deep focus" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
         <img src="imgs/deep_focus.jpeg" alt="" />
       </Cardsearch>
-      <Cardsearch header="Instrumental study" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+      <Cardsearch newBadge={false} header="Instrumental study" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
         <img src="imgs/instrumental_study.jpeg" alt="" />
       </Cardsearch>
-      <Cardsearch header="Day dreamer" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+      <Cardsearch newBadge={true} header="Day dreamer" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
         <img src="imgs/day_dreamer.jpeg" alt="" />
       </Cardsearch>
-      <Cardsearch header="Focus flow" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+      <Cardsearch newBadge={false} header="Focus flow" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
         <img src="imgs/focus_flow.jpeg" alt="" />
       </Cardsearch>
     </div>
