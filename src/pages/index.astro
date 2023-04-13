@@ -2,30 +2,12 @@
 import "../styles/global.css";
 
 // Importer components her
-import Button from "../components/Button.astro";
+
 import CardSection from "../components/CardSection.astro";
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import Sidebar from "../components/Sidebar.astro";
-import Footer from "../components/Footer.astro";
-import Card from "../components/Card.astro";
+
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Spotify</title>
-  </head>
-  <body class="bg-black">
-    <Header />
-    <Sidebar />
-
-    <main class="ml-80">
-      <!-- Indsæt Hero her -->
-      <CardSection />
-    </main>
-    <Footer />
-  </body>
-</html>
+<MainLayout title="Home">
+  <CardSection />
+</MainLayout>
