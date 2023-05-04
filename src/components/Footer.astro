@@ -1,19 +1,182 @@
-<!-- ---
-import Button from "./Button.astro";
+---
+import "../styles/tokens.css";
+import "../styles/base.css";
+const { titel, imgPath, description, price, discount1, discount2, discount3, shipping, newBadge, link } = Astro.props;
 ---
 
-<footer class="text-white flex p-3 fixed bottom-0 justify-between">
-  <div class="my-auto">
-    <p class="text-xs">PREVIEW OF SPOTIFY</p>
-    <p>Sign up to get unlimited songs and podcasts width occasional ads. No credit card needed</p>
-  </div>
+<div class="gradient">
+  <div class="w-[1280px] mx-auto">
+    <!-- <img class="h-20" src="/imgs/faraoslogo.png" alt="Faraos Logo" /><a href="/"></a> -->
+    <div class="">
+      <ul class="">
+        <div class="grid">
+          <a class="hover:scale-110 footerhead" ' href="/about">Butikker</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+        </div>
+        <div class="grid">
+          <a class="hover:scale-110 footerhead" ' href="/about">Kundeservice</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+        </div>
+        <div class="grid">
+          <a class="hover:scale-110 footerhead" ' href="/about">Services</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+        </div>
+        <div class="grid">
+          <a class="hover:scale-110 footerhead" ' href="/about">Om Faraos</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+          <a class="footerpara" href="">KØBENHAVN COMICS & POTTER</a>
+        </div>
+      </ul>
+      <div class="grid grid-cols-3">
+        <div class="nyhedsbrev">
+          <a class="hover:scale-110 footerhead" href="/about">Tilmeld dig nyhedsbrevet</a>
+          <p class="footer">Tilmeld dig vores nyhedsbrev med konkurrencer, tilbud og nyheder. Du vælger selv, hvad du vil have nyt om.</p>
+          <a href="">Nyhedsbrev</a>
+        </div>
+        <div class="grid col-start-3">
+          <div class="social">
+            <a class="hover:scale-110 footerhead" href="/about">Følg os her</a>
+            <p>Alt det nye om konkurrencer, events, tilbud og produkter. Følg os i dag, så er du altid opdateret.</p>
+          </div>
+          <div class="flex">
+            <div class="buttonsocial flex">
+              <img class="h-6 mr-2" src="imgs/shopping-cart.png" alt="" />
+              <a href={link} data-variant={"primary"}>
+                <p>Nyhedsbrev</p>
+              </a>
+            </div>
+            <div class="buttonsocial flex">
+              <img class="h-6 mr-2" src="imgs/shopping-cart.png" alt="" />
+              <a href={link} data-variant={"primary"}>
+                <p>Nyhedsbrev</p>
+              </a>
+            </div>
+            <div class="buttonsocial flex">
+              <img class="h-6 mr-2" src="imgs/shopping-cart.png" alt="" />
+              <a href={link} data-variant={"primary"}>
+                <p>Nyhedsbrev</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <Button variant="primary" link="/courses">Sign up for free</Button>
-</footer>
+    <div class="flex">
+      <a href=""></a>
+      <div class="buttonsocial flex">
+        <a href={link} data-variant={"primary"}>
+          <p>Nyhedsbrev</p>
+        </a>
+      </div>
+    </div>
+    <div class="grid grid-cols-4">
+      <div>
+        <p>Faraos Cigarer Aps</p>
+      </div>
+      <div>
+        <p>Skindergade 27, 1159 København K</p>
+      </div>
+      <div>
+        <p>33 32 22 11</p>
+        <p>faraos@faraos.dk</p>
+      </div>
+      <div>
+        <p>33 32 22 11</p>
+        <p>faraos@faraos.dk</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
-  footer {
-    background: linear-gradient(90deg, #af2896, #509bf5);
-    width: 100%;
+  .gradient {
+    background: var(--gradientBgColor);
+    padding-bottom: var(--lg);
+    padding-top: var(--lg);
   }
-</style> -->
+
+  .footerhead {
+    font-family: var(--fontComic);
+    font-weight: var(--fontSemibold);
+    font-size: var(--xl);
+    margin-bottom: var(--xl);
+  }
+  ul {
+    display: flex;
+
+    justify-content: space-around;
+  }
+
+  .footerpara {
+    font-family: var(----fontRoboto);
+    font-weight: ;
+    line-height: var(--tertiaryLineHeight);
+    font-size: var(--fontSm);
+    color: var(--secondaryTekstColor);
+  }
+
+  .buttonsocial {
+    margin: var(--sm);
+    background-color: var(--ctaPrimaryBgColor);
+    padding-left: var(--primaryXSpacing);
+    padding-right: var(--primaryXSpacing);
+    padding-top: var(--gapSpacing);
+    padding-bottom: var(--gapSpacing);
+    border-radius: var(--ctaPrimaryBorderRadius);
+    color: var(--ctaTertiaryBgColor);
+    font-family: var(--fontRoboto);
+    font-size: var(----baseFontSize);
+  }
+</style>

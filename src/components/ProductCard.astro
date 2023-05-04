@@ -1,14 +1,13 @@
 ---
 import "../styles/tokens.css";
 import "../styles/base.css";
-const { titel, imgPath, description, price, discount1, discount2, discount3, shipping } = Astro.props;
-const { newBadge } = Astro.props;
+const { titel, imgPath, description, price, discount1, discount2, discount3, shipping, newBadge, link } = Astro.props;
+
 import Button from "./Button.astro";
-const { link, variant } = Astro.props;
 ---
 
 <article class="mb-20 mt-20 w-[18.125rem]">
-  {newBadge && <p class="badge bg-red-800 text-end">New</p>}
+  {newBadge && <p class="badge">Nyhed</p>}
   <img class="imgradius" src={imgPath} alt="" height="320" width="620" />
 
   <h3 class="titel">{titel}</h3>
@@ -103,5 +102,12 @@ const { link, variant } = Astro.props;
     border-radius: var(--ctaPrimaryBorderRadius);
     color: var(--ctaTertiaryBgColor);
     font-family: var(--fontRoboto);
+  }
+
+  .badge {
+    background-color: var(--ctaSecondaryBgColor);
+    text-align: end;
+    color: var(--ctaPrimaryTekstColor);
+    margin-left: 220px;
   }
 </style>
