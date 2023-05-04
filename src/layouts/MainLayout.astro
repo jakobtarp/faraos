@@ -1,22 +1,30 @@
 ---
 import "../styles/global.css";
+import "../styles/tokens.css";
 import Header from "../components/Header.astro";
-import Sidebar from "../components/Sidebar.astro";
+
 import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
 const { title, hasSearch } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
   </head>
-  <body class="bg-black">
+  <Nav />
+  <body class="bg-grey-100">
     <Header hasSearch={hasSearch} />
-    <Sidebar />
-    <main class="ml-80">
+    <main class="">
       <slot />
     </main>
     <Footer />
