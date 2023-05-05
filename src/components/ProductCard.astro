@@ -7,7 +7,7 @@ import Button from "./Button.astro";
 ---
 
 <article class="mb-20 mt-20 w-[18.125rem]">
-  {newBadge && <p class="badge">Nyhed</p>}
+  {newBadge && <p class="badge mr-auto">NYHED</p>}
   <img class="imgradius" src={imgPath} alt="" height="320" width="620" />
 
   <h3 class="titel">{titel}</h3>
@@ -30,10 +30,6 @@ import Button from "./Button.astro";
 </article>
 
 <style>
-  .imgradius {
-    border-top-left-radius: var(--cardBorderRadius);
-    border-top-right-radius: var(--cardBorderRadius);
-  }
   article {
     border-radius: var(--cardBorderRadius);
     box-shadow: var(--shadowDefault);
@@ -106,8 +102,11 @@ import Button from "./Button.astro";
 
   .badge {
     background-color: var(--ctaSecondaryBgColor);
-    text-align: end;
+    font-family: var(--fontRoboto);
+    font-weight: var(--secondaryFontWeight);
+    text-align: center;
+    border-top-left-radius: var(--cardBorderRadius);
+    border-top-right-radius: var(--cardBorderRadius);
     color: var(--ctaPrimaryTekstColor);
-    margin-left: 220px;
   }
 </style>

@@ -122,16 +122,28 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
       </div>
     </div>
 
-    <div class="grid grid-cols-4 justify-between">
-      <div class="text-center">
+    <div class="grid grid-cols-4 justify-between downfooter">
+      <div class="text-center my-auto">
         <p>Faraos Cigarer Aps</p>
       </div>
-      <div class="text-center">
-        <p>Skindergade 27, 1159 København K</p>
+      <div class="my-auto mx-auto">
+        <div class="flex gap-3">
+          <img class="h-6" src="imgs/location.png" alt="" />
+          <div class="grid">
+            <p>Skindergade 27</p>
+            <p>1159 København K</p>
+          </div>
+        </div>
       </div>
-      <div class="text-center">
-        <p>33 32 22 11</p>
-        <p>faraos@faraos.dk</p>
+      <div class="text-center my-auto mx-auto">
+        <div class="flex gap-3 mb-2">
+          <img class="w-6" src="imgs/phone.png" alt="" />
+          <p>33 32 22 11</p>
+        </div>
+        <div class="flex gap-3">
+          <img class="w-6" src="imgs/mail.png" alt="" />
+          <p>faraos@faraos.dk</p>
+        </div>
       </div>
       <div class="ml-10">
         <img class="w-50" src="imgs/emaerket.png" alt="" />
@@ -148,6 +160,9 @@ const { titel, imgPath, description, price, discount1, discount2, discount3, shi
 </div>
 
 <style>
+  .downfooter {
+    color: var(--secondaryTekstColor);
+  }
   .marginb {
     margin-top: var(--5xl);
     margin-bottom: var(--7xl);
